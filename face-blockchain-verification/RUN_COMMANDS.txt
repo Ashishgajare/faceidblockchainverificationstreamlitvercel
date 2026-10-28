@@ -1,0 +1,28 @@
+FACE ID + BLOCKCHAIN VERIFICATION
+PowerShell commands
+
+1. Open PowerShell and go to the project:
+
+cd "C:\Users\Ashish\OneDrive\Desktop\projects\Face ID + Blockchain Verification MAIN\face-blockchain-verification"
+
+2. Set the working Python environment:
+
+$python = "C:\Users\Ashish\Miniconda3\envs\fbv\python.exe"
+
+3. Install dependencies and run tests:
+
+& $python -m pip install -r requirements.txt
+& $python -m pytest tests -q
+
+4. Run face verification on the sample image:
+
+& $python -m main --image "C:\Users\Ashish\Downloads\Screenshot 2026-09-07 161734.png"
+
+5. Start the local web interface:
+
+& $python -m streamlit run ui/app.py
+
+Open this link:
+http://localhost:8501
+
+Keep the terminal open while using the web interface. Press Ctrl+C to stop it.
